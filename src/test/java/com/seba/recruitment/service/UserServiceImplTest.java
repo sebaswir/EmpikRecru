@@ -27,7 +27,7 @@ class UserServiceImplTest {
 
 	@Mock
 	private DataService dataService;
-	
+
 	@Mock
 	private RequestCounterRepository requestCounterRepository;
 
@@ -67,9 +67,9 @@ class UserServiceImplTest {
 		assertEquals(nameValue, userResponse.getName());
 		assertEquals(typeValue, userResponse.getType());
 	}
-	
+
 	@BeforeEach
-	void prepareRepositoryMock(){
+	void prepareRepositoryMock() {
 		Mockito.when(requestCounterRepository.findById(Mockito.anyString())).thenReturn(Optional.empty());
 	}
 
