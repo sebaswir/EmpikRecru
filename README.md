@@ -11,5 +11,5 @@ http://localhost:8080/users/{login}
 Access to H2 DB via web console:
 http://localhost:8080/h2-console/login.jsp
 
-JDBC URL, username and password in application.properties
+JDBC URL, username and password in src/main/resources/application.properties
 
